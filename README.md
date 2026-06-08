@@ -25,15 +25,20 @@ User sees the website
 - **Terraform** — creates all AWS infrastructure automatically from code
 
 ## Project structure
+
+```
 terraform-portfolio-project/
-├── nextjs-blog/          # Next.js website source code
-│   ├── pages/            # website pages
-│   ├── styles/           # CSS styles
-│   └── out/              # built static files (not in git)
-└── terraform-nextjs/     # infrastructure as code
-├── backend.tf        # where Terraform stores its state
-├── main.tf           # AWS resources to create
-└── outputs.tf        # prints URLs after deployment
+
+    nextjs-blog/
+        pages/            # website pages
+        styles/           # CSS styles
+        out/              # built static files (not in git)
+
+    terraform-nextjs/
+        backend.tf        # where Terraform stores its state
+        main.tf           # AWS resources to create
+        outputs.tf        # prints URLs after deployment
+```
 
 ## How to deploy
 
